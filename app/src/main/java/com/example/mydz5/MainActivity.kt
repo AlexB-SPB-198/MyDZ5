@@ -18,10 +18,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.buttonPlus.setOnClickListener {
-            count();
+            count()
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun count() {
         if (count in 0..9 && !check) {
             count++

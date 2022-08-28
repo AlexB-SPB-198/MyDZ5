@@ -12,7 +12,7 @@ class SecondActivity  : AppCompatActivity() {
         binding = SecondActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val arguments = intent.extras
-        val name = arguments?.get("key").toString()
+        val name = arguments?.get("key1").toString()
         binding.textview.text = name
     }
 
